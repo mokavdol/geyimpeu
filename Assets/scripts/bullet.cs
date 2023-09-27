@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    public GameObject prefab;
+    private float speed =10;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,6 @@ public class bullet : MonoBehaviour
     void Update()
     {
         
+        transform.Translate(0, 0, speed * Time.deltaTime);
     }
 }
